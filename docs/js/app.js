@@ -171,6 +171,7 @@ class App {
     try {
       resultCanvas = PerspectiveWarper.warp(this._fullResImage, corners, this._selectedRatio);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error("Не удалось выполнить трансформацию:", err);
       return;
     }
@@ -200,6 +201,7 @@ class App {
     try {
       resultCanvas = PerspectiveWarper.warp(this._fullResImage, this._lastCorners, this._selectedRatio);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error("Не удалось выполнить трансформацию:", err);
       return;
     }

@@ -24,6 +24,7 @@ export class ImageLoader {
     try {
       bitmap = await createImageBitmap(file);
     } catch (err) {
+      // eslint-disable-next-line no-console
       console.error("Не удалось загрузить изображение:", err);
       return;
     }
