@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>make it square</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">make it square</h1>
+  </header>
+
+  <main class="workspace">
+    <div class="canvas-container" id="canvas-container">
+      <canvas id="image-canvas"></canvas>
+      <canvas id="overlay-canvas"></canvas>
+      <div class="placeholder" id="placeholder">
+        <p class="placeholder__icon">&#128247;</p>
+        <p class="placeholder__text">Загрузите фото для начала</p>
+      </div>
+    </div>
+  </main>
+
+  <div class="ratio-bar ratio-bar--hidden" id="ratio-bar">
+    <button class="ratio-bar__btn ratio-bar__btn--active" data-ratio="auto">Авто</button>
+    <button class="ratio-bar__btn" data-ratio="1:1">Квадрат</button>
+    <button class="ratio-bar__btn" data-ratio="210:297">A4</button>
+    <button class="ratio-bar__btn" data-ratio="4:3">4:3</button>
+    <button class="ratio-bar__btn" data-ratio="16:9">16:9</button>
+  </div>
+
+  <footer class="toolbar">
+    <label class="toolbar__btn toolbar__btn--primary" id="load-btn">
+      Загрузить фото
+      <input type="file" accept="image/*" id="file-input" hidden>
+    </label>
+    <button class="toolbar__btn" id="apply-btn" disabled>Применить</button>
+    <button class="toolbar__btn" id="reset-btn" disabled>Сбросить</button>
+    <button class="toolbar__btn" id="download-btn" disabled>Скачать</button>
+  </footer>
+
+  <script type="module" src="src/js/app.js"></script>
+</body>
+</html>
