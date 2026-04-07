@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Make it square icon</title>
+  <desc id="desc">Минималистичная иконка со скруглённым квадратом и контрастным акцентом.</desc>
+  <rect width="512" height="512" rx="112" fill="#2563EB"/>
+  <rect x="132" y="132" width="248" height="248" rx="56" fill="#FFFFFF" opacity="0.96"/>
+  <path d="M154 330 338 146c11-11 28-11 39 0l-34 34-185 185-42 7z" fill="#F59E0B"/>
+  <circle cx="357" cy="155" r="23" fill="#F59E0B"/>
+</svg>
